@@ -1,0 +1,170 @@
+/*body*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    position: absolute;
+    background: url("pexels-photo-3601425.jpg") center center/cover no-repeat;
+    background-color: rgba(0, 0, 0, 1);
+    background-blend-mode: overlay;
+    padding: 0px;
+    animation: slide 10s linear infinite;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slide {
+    0% {
+        background: url('pexels-photo-3601425.jpg') center center/cover no-repeat;
+    }
+    16.67% {
+        background: url('pexels-photo-3601425.jpg') center center/cover no-repeat;
+    }
+    33.34% {
+        background: url('pexels-pixabay-147411.jpg') center center/cover no-repeat;
+    }
+    50.01% {
+        background: url('pexels-pixabay-147411.jpg') center center/cover no-repeat;
+    }
+    66.68% {
+        background: url('pexels-trace-hudson-2613946.jpg') center center/cover no-repeat;
+    }
+    83.35% {
+        background: url('pexels-trace-hudson-2613946.jpg') center center/cover no-repeat;
+    }
+    100% {
+        background: url('pexels-photo-3601425.jpg') center center/cover no-repeat;
+    }
+}
+
+/*header*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+li {
+    float: right;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    color: aqua;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: aqua;
+}
+
+
+/*center*/
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+/*font style*/
+.font {
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all .3s;
+}
+
+.font:hover {
+    letter-spacing: 2.5px;
+}
+
+h1 {
+    font-size: 70px;
+    letter-spacing: 1.5px;
+}
+
+h1:hover {
+    transform: scale(1.1);
+}
+
+
+
+.buttons {
+    margin-top: 25px;
+}
+
+
+/* like share button */
+.button-likeShare {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #111;
+    cursor: pointer;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    letter-spacing: -.8px;
+    width: 170px;
+    padding: 0 17px;
+    margin: 5px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.button-likeShare:hover {
+    background-color: #13AA52;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+/* subscribe button */
+.button-subscribe {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    width: 170px;
+    padding: 0 17px;
+    margin: 5px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.button-subscribe:hover {
+    background-color: #E62143;
+    border-color: #fff;
+    color: #fff;
+    transform: scale(1.1);
+}
